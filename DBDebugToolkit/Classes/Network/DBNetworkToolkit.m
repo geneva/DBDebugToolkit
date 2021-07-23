@@ -38,10 +38,11 @@ Class DBNetworkURLProtocolClass;
 
 #pragma mark - Initialization
 
-+ (void)initialize {
-    if (self == [DBNetworkToolkit class]) {
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         DBNetworkURLProtocolClass = [DBURLProtocol class];
-    }
+    });
 }
 
 - (instancetype)init {

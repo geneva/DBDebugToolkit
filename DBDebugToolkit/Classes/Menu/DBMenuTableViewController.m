@@ -73,7 +73,12 @@ typedef NS_ENUM(NSUInteger, DBMenuTableViewControllerRow) {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == DBMenuTableViewControllerRowApplicationSettings) {
         // Open application settings.
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+        Class UIApplicationClass = NSClassFromString(@"UIApplication");
+        if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+            return;
+        }
+        UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+        [application performSelector:@selector(openURL:) withObject:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
         [tableView deselectRowAtIndexPath:indexPath animated:true];
     }
 }

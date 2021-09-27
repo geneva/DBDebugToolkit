@@ -104,7 +104,12 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
 
 - (void)setTriggers:(NSArray<id<DBDebugToolkitTrigger>> *)triggers {
     _triggers = [triggers copy];
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+    UIWindow *keyWindow = application.keyWindow;
     [self addTriggersToWindow:keyWindow];
     for (id <DBDebugToolkitTrigger> trigger in triggers) {
         trigger.delegate = self;
@@ -316,7 +321,12 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
         return;
     }
 
-    NSArray <UIApplicationShortcutItem *> *shortcutItems = UIApplication.sharedApplication.shortcutItems;
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+    NSArray <UIApplicationShortcutItem *> *shortcutItems = application.shortcutItems;
     for (UIApplicationShortcutItem *item in shortcutItems) {
         if ([item.type isEqualToString:DBClearDataShortcutItemType]) {
             // We already added `Clear data` shortcut item.
@@ -332,7 +342,8 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
                                                                                               userInfo:nil];
     NSMutableArray *newShortcutItems = shortcutItems == nil ? [NSMutableArray array] : [NSMutableArray arrayWithArray:shortcutItems];
     [newShortcutItems insertObject:clearDataShortcutItem atIndex:0];
-    UIApplication.sharedApplication.shortcutItems = [newShortcutItems copy];
+
+    application.shortcutItems = [newShortcutItems copy];
 }
 
 + (void)handleClearDataShortcutItemAction {
@@ -346,7 +357,13 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
 
 - (void)setupTopLevelViewsWrapper {
     self.topLevelViewsWrapper = [DBTopLevelViewsWrapper new];
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
+    UIWindow *keyWindow = application.keyWindow;
     [self addTopLevelViewsWrapperToWindow:keyWindow];
 }
 
@@ -454,7 +471,13 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
 }
 
 - (UIViewController *)topmostViewController {
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return nil;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
+    UIViewController *rootViewController = application.keyWindow.rootViewController;
     return [self topmostViewControllerWithRootViewController:rootViewController];
 }
 

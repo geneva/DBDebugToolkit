@@ -229,7 +229,14 @@ static void handleSIGPIPESignal(int sig) {
                callStackSymbols:(NSArray<NSString *> *)callStackSymbols
                            date:(NSDate *)date {
     BOOL isMainThread = [NSThread isMainThread];
-    UIImage *screenshot = isMainThread ? [[UIApplication sharedApplication].keyWindow db_snapshot] : nil;
+
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
+    UIImage *screenshot = isMainThread ? [application.keyWindow db_snapshot] : nil;
     [self saveCrashReportWithName:name
                            reason:reason
                          userInfo:userInfo

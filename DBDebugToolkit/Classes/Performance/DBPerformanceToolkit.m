@@ -203,10 +203,16 @@ static const NSTimeInterval DBPerformanceToolkitTimeBetweenMeasurements = 1.0;
 }
 
 - (void)simulateMemoryWarning {
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
     // Making sure to minimize the risk of rejecting app because of the private API.
     NSString *key = [[NSString alloc] initWithData:[NSData dataWithBytes:(unsigned char []){0x5f, 0x70, 0x65, 0x72, 0x66, 0x6f, 0x72, 0x6d, 0x4d, 0x65, 0x6d, 0x6f, 0x72, 0x79, 0x57, 0x61, 0x72, 0x6e, 0x69, 0x6e, 0x67} length:21] encoding:NSASCIIStringEncoding];
     SEL selector = NSSelectorFromString(key);
-    id object = [UIApplication sharedApplication];
+    id object = application;
     ((void (*)(id, SEL))[object methodForSelector:selector])(object, selector);
 }
 

@@ -71,7 +71,13 @@ NSString *const DBUserInterfaceToolkitColorizedViewBordersChangedNotification = 
 #pragma mark - Public methods
 
 - (NSString *)autolayoutTrace {
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return nil;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
+    UIWindow *window = application.keyWindow;
     // Making sure to minimize the risk of rejecting app because of the private API.
     NSString *key = [[NSString alloc] initWithData:[NSData dataWithBytes:(unsigned char []){0x5f, 0x61, 0x75, 0x74, 0x6f, 0x6c, 0x61, 0x79, 0x6f, 0x75, 0x74, 0x54, 0x72, 0x61, 0x63, 0x65} length:16] encoding:NSASCIIStringEncoding];
     SEL selector = NSSelectorFromString(key);
@@ -86,7 +92,14 @@ NSString *const DBUserInterfaceToolkitColorizedViewBordersChangedNotification = 
 }
 
 - (NSString *)viewControllerHierarchy {
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return nil;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
+    UIWindow *window = application.keyWindow;
+    UIViewController *rootViewController = window.rootViewController;
     // Making sure to minimize the risk of rejecting app because of the private API.
     NSString *key = [[NSString alloc] initWithData:[NSData dataWithBytes:(unsigned char []){0x5f, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x48, 0x69, 0x65, 0x72, 0x61, 0x72, 0x63, 0x68, 0x79} length:15] encoding:NSASCIIStringEncoding];
     SEL selector = NSSelectorFromString(key);
@@ -96,9 +109,15 @@ NSString *const DBUserInterfaceToolkitColorizedViewBordersChangedNotification = 
 #pragma mark - Handling flags 
 
 - (void)setSlowAnimationsEnabled:(BOOL)slowAnimationsEnabled {
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
     if (_slowAnimationsEnabled != slowAnimationsEnabled) {
         _slowAnimationsEnabled = slowAnimationsEnabled;
-        for (UIWindow *window in [UIApplication sharedApplication].windows) {
+        for (UIWindow *window in application.windows) {
             [self setSpeedForWindow:window];
         }
     }
@@ -118,9 +137,15 @@ NSString *const DBUserInterfaceToolkitColorizedViewBordersChangedNotification = 
 }
 
 - (void)setShowingTouchesEnabled:(BOOL)showingTouchesEnabled {
+    Class UIApplicationClass = NSClassFromString(@"UIApplication");
+    if(!UIApplicationClass || ![UIApplicationClass respondsToSelector:@selector(sharedApplication)]) {
+        return;
+    }
+    UIApplication *application = [UIApplication performSelector:@selector(sharedApplication)];
+
     if (_showingTouchesEnabled != showingTouchesEnabled) {
         _showingTouchesEnabled = showingTouchesEnabled;
-        for (UIWindow *window in [UIApplication sharedApplication].windows) {
+        for (UIWindow *window in application.windows) {
             [self setShowingTouchesEnabledForWindow:window];
         }
     }

@@ -28,7 +28,14 @@
 + (instancetype)debugToolkitBundle {
     NSBundle *podBundle = [NSBundle bundleForClass:[DBDeviceInfoProvider class]];
     NSURL *bundleURL = [podBundle URLForResource:@"DBDebugToolkit" withExtension:@"bundle"];
-    return [NSBundle bundleWithURL:bundleURL];
+
+    if (bundleURL) {
+        return [NSBundle bundleWithURL:bundleURL];
+    }
+
+    // This is for Swift Package Manager
+    NSURL *spmBundleURL = [podBundle URLForResource:@"DBDebugToolkit_DBDebugToolkit" withExtension:@"bundle"];
+    return [NSBundle bundleWithURL:spmBundleURL];
 }
 
 @end

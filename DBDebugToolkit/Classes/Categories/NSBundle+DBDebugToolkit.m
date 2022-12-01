@@ -21,12 +21,12 @@
 // THE SOFTWARE.
 
 #import "NSBundle+DBDebugToolkit.h"
-#import "DBDebugToolkit.h"
+#import "DBDeviceInfoProvider.h"
 
 @implementation NSBundle (DBDebugToolkit)
 
 + (instancetype)debugToolkitBundle {
-    NSBundle *podBundle = [NSBundle bundleForClass:[DBDebugToolkit class]];
+    NSBundle *podBundle = [NSBundle bundleForClass:[DBDeviceInfoProvider class]];
     NSURL *bundleURL = [podBundle URLForResource:@"DBDebugToolkit" withExtension:@"bundle"];
     return [NSBundle bundleWithURL:bundleURL];
 }

@@ -136,7 +136,7 @@ static sighandler_t _previousSIGPIPEHandler;
     signal(SIGPIPE, handleSIGPIPESignal);
 }
 
-void stopCrashReporting(void) {
+void stopCrashReporting() {
     NSSetUncaughtExceptionHandler(_previousUncaughtExceptionHandler);
     signal(SIGABRT, _previousSIGABRTHandler);
     signal(SIGILL, _previousSIGILLHandler);

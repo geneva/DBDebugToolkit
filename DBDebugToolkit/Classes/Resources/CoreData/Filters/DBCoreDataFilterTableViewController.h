@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import <DBCoreDataFilter.h>
+#import "DBCoreDataFilter.h"
 
 @class DBCoreDataFilterTableViewController;
 

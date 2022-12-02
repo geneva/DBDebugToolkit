@@ -21,9 +21,9 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import <DBConsoleOutputCaptor.h>
-#import <DBBuildInfoProvider.h>
-#import <DBDeviceInfoProvider.h>
+#import "DBConsoleOutputCaptor.h"
+#import "DBBuildInfoProvider.h"
+#import "DBDeviceInfoProvider.h"
 
 /**
  `DBConsoleViewController` is a view controller that presents the captured console output in a text view.

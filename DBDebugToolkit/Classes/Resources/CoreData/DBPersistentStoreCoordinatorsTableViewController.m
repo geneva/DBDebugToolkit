@@ -21,9 +21,9 @@
 // THE SOFTWARE.
 
 #import "DBPersistentStoreCoordinatorsTableViewController.h"
-#import "UILabel+DBDebugToolkit.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBTitleValueTableViewCell.h"
+#import "../../Categories/UILabel+DBDebugToolkit.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
+#import "../../Cells/TitleValue/DBTitleValueTableViewCell.h"
 
 static NSString *const DBPersistentStoreCoordinatorsTableViewControllerTitleValueCellIdentifier = @"DBTitleValueTableViewCell";
 

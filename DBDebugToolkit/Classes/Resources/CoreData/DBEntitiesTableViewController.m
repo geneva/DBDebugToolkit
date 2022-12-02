@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "DBEntitiesTableViewController.h"
-#import "UILabel+DBDebugToolkit.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../../Categories/UILabel+DBDebugToolkit.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
 #import "DBManagedObjectsListTableViewController.h"
 #import <CoreData/CoreData.h>
 

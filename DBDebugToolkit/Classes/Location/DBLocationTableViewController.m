@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBLocationTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
 #import "DBCustomLocationViewController.h"
 
 static NSString *const DBLocationTableViewControllerSelectedCustomCellIdentifier = @"DBDebugToolkit_selectedCustomCell";

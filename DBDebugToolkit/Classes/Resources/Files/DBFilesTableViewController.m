@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "DBFilesTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "UILabel+DBDebugToolkit.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
+#import "../../Categories/UILabel+DBDebugToolkit.h"
 #import "DBFileTableViewCell.h"
 
 static NSString *const DBFilesTableViewControllerDirectoryCellIdentifier = @"DirectoryCell";

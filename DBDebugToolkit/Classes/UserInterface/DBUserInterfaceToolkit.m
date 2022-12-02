@@ -21,10 +21,10 @@
 // THE SOFTWARE.
 
 #import "DBUserInterfaceToolkit.h"
-#import "UIView+DBUserInterfaceToolkit.h"
-#import "UIWindow+DBUserInterfaceToolkit.h"
-#import "NSObject+DBDebugToolkit.h"
-#import "UIColor+DBDebugToolkit.h"
+#import "Categories/UIView+DBUserInterfaceToolkit.h"
+#import "Categories/UIWindow+DBUserInterfaceToolkit.h"
+#import "../Categories/NSObject+DBDebugToolkit.h"
+#import "../Categories/UIColor+DBDebugToolkit.h"
 
 NSString *const DBUserInterfaceToolkitColorizedViewBordersChangedNotification = @"DBUserInterfaceToolkitColorizedViewBordersChangedNotification";
 

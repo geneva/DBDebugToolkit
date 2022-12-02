@@ -21,16 +21,16 @@
 // THE SOFTWARE.
 
 #import "DBMenuTableViewController.h"
-#import "DBPerformanceTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBConsoleViewController.h"
-#import "DBNetworkViewController.h"
-#import "DBUserInterfaceTableViewController.h"
-#import "DBLocationTableViewController.h"
-#import "DBResourcesTableViewController.h"
-#import "DBCustomActionsTableViewController.h"
-#import "DBCustomVariablesTableViewController.h"
-#import "DBCrashReportsTableViewController.h"
+#import "../Performance/DBPerformanceTableViewController.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Console/DBConsoleViewController.h"
+#import "../Network/DBNetworkViewController.h"
+#import "../UserInterface/DBUserInterfaceTableViewController.h"
+#import "../Location/DBLocationTableViewController.h"
+#import "../Resources/DBResourcesTableViewController.h"
+#import "../CustomActions/DBCustomActionsTableViewController.h"
+#import "../CustomVariables/DBCustomVariablesTableViewController.h"
+#import "../CrashReports/DBCrashReportsTableViewController.h"
 
 typedef NS_ENUM(NSUInteger, DBMenuTableViewControllerRow) {
     DBMenuTableViewControllerRowPerformance,

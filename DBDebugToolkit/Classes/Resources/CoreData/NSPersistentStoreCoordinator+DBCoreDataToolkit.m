@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "NSPersistentStoreCoordinator+DBCoreDataToolkit.h"
-#import "NSObject+DBDebugToolkit.h"
+#import "../../Categories/NSObject+DBDebugToolkit.h"
 #import "DBCoreDataToolkit.h"
 
 @implementation NSPersistentStoreCoordinator (DBCoreDataToolkit)

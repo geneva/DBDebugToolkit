@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBCustomActionsTableViewController.h"
-#import "UILabel+DBDebugToolkit.h"
+#import "../Categories/UILabel+DBDebugToolkit.h"
 
 static NSString *const DBCustomActionsTableViewControllerButtonCellIdentifier = @"DBMenuButtonTableViewCell";
 

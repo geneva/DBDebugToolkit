@@ -21,9 +21,9 @@
 // THE SOFTWARE.
 
 #import "DBCrashReportDetailsTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBTitleValueTableViewCell.h"
-#import "DBTextViewViewController.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Cells/TitleValue/DBTitleValueTableViewCell.h"
+#import "../UserInterface/DBTextViewViewController.h"
 #import "DBImageViewViewController.h"
 #import <MessageUI/MessageUI.h>
 

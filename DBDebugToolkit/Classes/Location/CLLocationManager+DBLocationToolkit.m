@@ -22,7 +22,7 @@
 
 #import "CLLocationManager+DBLocationToolkit.h"
 #import "DBLocationToolkit.h"
-#import "NSObject+DBDebugToolkit.h"
+#import "../Categories/NSObject+DBDebugToolkit.h"
 #import <objc/runtime.h>
 
 static NSString *const CLLocationManagerLocationsKey = @"Locations";

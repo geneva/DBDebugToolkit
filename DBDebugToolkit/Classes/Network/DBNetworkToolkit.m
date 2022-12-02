@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "DBNetworkToolkit.h"
-#import "DBURLProtocol.h"
-#import "DBRequestModel.h"
+#import "URLProtocol/DBURLProtocol.h"
+#import "RequestModel/DBRequestModel.h"
 
 Class DBNetworkURLProtocolClass;
 

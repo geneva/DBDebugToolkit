@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBFontFamiliesTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
 #import "DBFontPreviewViewController.h"
 
 static NSString *const DBFontFamiliesTableViewControllerFontCellIdentifier = @"FontCell";

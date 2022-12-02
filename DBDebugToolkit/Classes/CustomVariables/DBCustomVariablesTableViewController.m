@@ -21,10 +21,10 @@
 // THE SOFTWARE.
 
 #import "DBCustomVariablesTableViewController.h"
-#import "UILabel+DBDebugToolkit.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBMenuSwitchTableViewCell.h"
-#import "DBTextViewTableViewCell.h"
+#import "../Categories/UILabel+DBDebugToolkit.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Cells/DBMenuSwitchTableViewCell.h"
+#import "../Cells/DBTextViewTableViewCell.h"
 
 typedef NS_ENUM(NSUInteger, DBCustomVariablesTableViewControllerSection) {
     DBCustomVariablesTableViewControllerSectionStringVariables,

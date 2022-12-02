@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBPerformanceToolkit.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
 #import "DBFPSCalculator.h"
 #import <mach/mach.h>
 

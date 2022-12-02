@@ -21,10 +21,10 @@
 // THE SOFTWARE.
 
 #import "DBPerformanceTableViewController.h"
-#import "DBMenuSwitchTableViewCell.h"
-#import "DBMenuSegmentedControlTableViewCell.h"
-#import "DBMenuChartTableViewCell.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../Cells/DBMenuSwitchTableViewCell.h"
+#import "../Cells/DBMenuSegmentedControlTableViewCell.h"
+#import "../Cells/DBMenuChartTableViewCell.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
 
 static NSString *const DBPerformanceTableViewControllerSwitchCellIdentifier = @"DBMenuSwitchTableViewCell";
 static NSString *const DBPerformanceTableViewControllerSegmentedControlCellIdentifier = @"DBMenuSegmentedControlTableViewCell";

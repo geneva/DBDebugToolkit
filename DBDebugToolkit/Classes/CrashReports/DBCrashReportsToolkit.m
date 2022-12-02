@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBCrashReportsToolkit.h"
-#import "UIView+Snapshot.h"
+#import "../Categories/UIView+Snapshot.h"
 #include <assert.h>
 #include <stdbool.h>
 #include <sys/types.h>
@@ -136,7 +136,7 @@ static sighandler_t _previousSIGPIPEHandler;
     signal(SIGPIPE, handleSIGPIPESignal);
 }
 
-void stopCrashReporting(void) {
+void stopCrashReporting() {
     NSSetUncaughtExceptionHandler(_previousUncaughtExceptionHandler);
     signal(SIGABRT, _previousSIGABRTHandler);
     signal(SIGILL, _previousSIGILLHandler);

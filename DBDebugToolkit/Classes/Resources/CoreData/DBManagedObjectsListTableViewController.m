@@ -21,12 +21,12 @@
 // THE SOFTWARE.
 
 #import "DBManagedObjectsListTableViewController.h"
-#import "UILabel+DBDebugToolkit.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../../Categories/UILabel+DBDebugToolkit.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
 #import "DBManagedObjectTableViewCell.h"
 #import "DBManagedObjectTableViewController.h"
-#import "DBCoreDataFilterSettings.h"
-#import "DBCoreDataFilterSettingsTableViewController.h"
+#import "Filters/DBCoreDataFilterSettings.h"
+#import "Filters/DBCoreDataFilterSettingsTableViewController.h"
 
 static NSString *const DBManagedObjectsListTableViewControllerManagedObjectCellIdentifier = @"DBManagedObjectTableViewCell";
 

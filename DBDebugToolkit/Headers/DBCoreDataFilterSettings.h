@@ -1,1 +1,0 @@
-../Classes/Resources/CoreData/Filters/DBCoreDataFilterSettings.h

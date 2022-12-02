@@ -21,9 +21,9 @@
 // THE SOFTWARE.
 
 #import "DBTitleValueListTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBTitleValueTableViewCell.h"
-#import "UILabel+DBDebugToolkit.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Cells/TitleValue/DBTitleValueTableViewCell.h"
+#import "../Categories/UILabel+DBDebugToolkit.h"
 
 static NSString *const DBTitleValueListTableViewControllerTitleValueCellIdentifier = @"DBTitleValueTableViewCell";
 

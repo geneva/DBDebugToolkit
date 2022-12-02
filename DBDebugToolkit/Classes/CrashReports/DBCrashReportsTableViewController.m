@@ -21,12 +21,12 @@
 // THE SOFTWARE.
 
 #import "DBCrashReportsTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBTitleValueTableViewCell.h"
-#import "UILabel+DBDebugToolkit.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Cells/TitleValue/DBTitleValueTableViewCell.h"
+#import "../Categories/UILabel+DBDebugToolkit.h"
 #import "DBCrashReportDetailsTableViewController.h"
-#import "DBBuildInfoProvider.h"
-#import "DBDeviceInfoProvider.h"
+#import "../BuildInfo/DBBuildInfoProvider.h"
+#import "../Device/DBDeviceInfoProvider.h"
 
 static NSString *const DBCrashReportsTableViewControllerTitleValueCellIdentifier = @"DBTitleValueTableViewCell";
 

@@ -22,7 +22,7 @@
 
 #import <objc/runtime.h>
 #import "UIWindow+DBShakeTrigger.h"
-#import "NSObject+DBDebugToolkit.h"
+#import "../../Categories/NSObject+DBDebugToolkit.h"
 
 static NSString *const UIWindowShakeDelegatesKey = @"DBDebugToolkit_shakeDelegates";
 

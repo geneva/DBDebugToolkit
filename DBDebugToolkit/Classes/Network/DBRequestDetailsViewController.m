@@ -21,9 +21,9 @@
 // THE SOFTWARE.
 
 #import "DBRequestDetailsViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBMenuSegmentedControlTableViewCell.h"
-#import "DBTitleValueTableViewCell.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Cells/DBMenuSegmentedControlTableViewCell.h"
+#import "../Cells/TitleValue/DBTitleValueTableViewCell.h"
 #import "DBBodyPreviewViewController.h"
 
 typedef NS_ENUM(NSInteger, DBRequestDetailsViewControllerTab) {

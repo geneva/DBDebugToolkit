@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "NSBundle+DBDebugToolkit.h"
-#import "DBDeviceInfoProvider.h"
+#import "../Device/DBDeviceInfoProvider.h"
 
 @implementation NSBundle (DBDebugToolkit)
 

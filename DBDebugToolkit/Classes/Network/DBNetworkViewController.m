@@ -21,11 +21,11 @@
 // THE SOFTWARE.
 
 #import "DBNetworkViewController.h"
-#import "DBRequestTableViewCell.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../Cells/DBRequestTableViewCell.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
 #import "DBNetworkSettingsTableViewController.h"
 #import "DBRequestDetailsViewController.h"
-#import "NSOperationQueue+DBMainQueueOperation.h"
+#import "MainQueueOperation/NSOperationQueue+DBMainQueueOperation.h"
 
 static NSString *const DBNetworkViewControllerRequestCellIdentifier = @"DBRequestTableViewCell";
 

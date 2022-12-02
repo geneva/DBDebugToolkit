@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "DBManagedObjectTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBTitleValueTableViewCell.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
+#import "../../Cells/TitleValue/DBTitleValueTableViewCell.h"
 #import "DBManagedObjectsListTableViewController.h"
 
 typedef NS_ENUM(NSUInteger, DBManagedObjectTableViewControllerSection) {

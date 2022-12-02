@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "DBPerformanceWidgetView.h"
+#import "Widget/DBPerformanceWidgetView.h"
 
 @class DBPerformanceToolkit;
 

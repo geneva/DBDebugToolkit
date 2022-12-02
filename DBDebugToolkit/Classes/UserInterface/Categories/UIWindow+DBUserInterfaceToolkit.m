@@ -21,10 +21,10 @@
 // THE SOFTWARE.
 
 #import "UIWindow+DBUserInterfaceToolkit.h"
-#import "DBTouchIndicatorView.h"
+#import "../DBTouchIndicatorView.h"
 #import <objc/runtime.h>
-#import "NSObject+DBDebugToolkit.h"
-#import "DBUserInterfaceToolkit.h"
+#import "../../Categories/NSObject+DBDebugToolkit.h"
+#import "../DBUserInterfaceToolkit.h"
 
 static NSString *const UIWindowTouchIndicatorsKey = @"DBDebugToolkit_touchIndicators";
 static NSString *const UIWindowReusableTouchIndicatorsKey = @"DBDebugToolkit_reusableTouchIndicators";

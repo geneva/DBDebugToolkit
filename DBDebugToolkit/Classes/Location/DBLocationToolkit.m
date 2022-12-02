@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBLocationToolkit.h"
-#import "DBDebugToolkitUserDefaultsKeys.h"
+#import "../Resources/UserDefaults/DBDebugToolkitUserDefaultsKeys.h"
 
 @interface DBLocationToolkit ()
 

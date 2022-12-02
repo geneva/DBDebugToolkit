@@ -1,1 +1,0 @@
-../Classes/Resources/CoreData/DBManagedObjectTableViewController.h

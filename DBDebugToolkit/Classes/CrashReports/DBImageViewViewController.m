@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBImageViewViewController.h"
-#import "UIView+Snapshot.h"
+#import "../Categories/UIView+Snapshot.h"
 
 @interface DBImageViewViewController ()
 

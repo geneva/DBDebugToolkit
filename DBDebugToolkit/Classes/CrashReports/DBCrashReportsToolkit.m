@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBCrashReportsToolkit.h"
-#import "UIView+Snapshot.h"
+#import "../Categories/UIView+Snapshot.h"
 #include <assert.h>
 #include <stdbool.h>
 #include <sys/types.h>

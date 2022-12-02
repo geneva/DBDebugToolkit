@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "DBCookieDetailsTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBTitleValueTableViewCell.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
+#import "../../Cells/TitleValue/DBTitleValueTableViewCell.h"
 
 static NSString *const DBCookieDetailsTableViewControllerTitleValueCellIdentifier = @"DBTitleValueTableViewCell";
 

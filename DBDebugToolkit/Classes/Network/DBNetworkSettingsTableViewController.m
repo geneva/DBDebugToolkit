@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "DBNetworkSettingsTableViewController.h"
-#import "DBMenuSwitchTableViewCell.h"
-#import "NSBundle+DBDebugToolkit.h"
+#import "../Cells/DBMenuSwitchTableViewCell.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
 
 static NSString *const DBNetworkSettingsTableViewControllerSwitchCellIdentifier = @"DBMenuSwitchTableViewCell";
 

@@ -21,10 +21,10 @@
 // THE SOFTWARE.
 
 #import "DBGridOverlaySettingsTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBMenuSwitchTableViewCell.h"
-#import "DBSliderTableViewCell.h"
-#import "DBColorPickerTableViewCell.h"
+#import "../../Categories/NSBundle+DBDebugToolkit.h"
+#import "../../Cells/DBMenuSwitchTableViewCell.h"
+#import "../../Cells/DBSliderTableViewCell.h"
+#import "../../Cells/ColorPicker/DBColorPickerTableViewCell.h"
 #import "DBGridOverlayColorScheme.h"
 
 typedef NS_ENUM(NSUInteger, DBGridOverlaySettingsTableViewControllerSection) {

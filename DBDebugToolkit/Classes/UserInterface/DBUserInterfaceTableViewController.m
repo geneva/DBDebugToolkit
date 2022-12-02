@@ -21,11 +21,11 @@
 // THE SOFTWARE.
 
 #import "DBUserInterfaceTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBMenuSwitchTableViewCell.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "../Cells/DBMenuSwitchTableViewCell.h"
 #import "DBTextViewViewController.h"
 #import "DBFontFamiliesTableViewController.h"
-#import "DBGridOverlaySettingsTableViewController.h"
+#import "GridOverlay/DBGridOverlaySettingsTableViewController.h"
 
 typedef NS_ENUM(NSUInteger, DBUserInterfaceTableViewControllerCell) {
     DBUserInterfaceTableViewControllerCellColorBorders,

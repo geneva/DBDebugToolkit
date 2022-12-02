@@ -21,12 +21,12 @@
 // THE SOFTWARE.
 
 #import "DBResourcesTableViewController.h"
-#import "DBKeychainToolkit.h"
-#import "DBUserDefaultsToolkit.h"
+#import "Keychain/DBKeychainToolkit.h"
+#import "UserDefaults/DBUserDefaultsToolkit.h"
 #import "DBTitleValueListTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBPersistentStoreCoordinatorsTableViewController.h"
-#import "DBEntitiesTableViewController.h"
+#import "../Categories/NSBundle+DBDebugToolkit.h"
+#import "CoreData/DBPersistentStoreCoordinatorsTableViewController.h"
+#import "CoreData/DBEntitiesTableViewController.h"
 
 typedef NS_ENUM(NSUInteger, DBResourcesTableViewControllerSubmenu) {
     DBResourcesTableViewControllerSubmenuFiles,

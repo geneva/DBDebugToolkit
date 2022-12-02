@@ -22,9 +22,9 @@
 
 #import "DBCoreDataFilterTableViewController.h"
 #import "DBOptionsListTableViewController.h"
-#import "NSBundle+DBDebugToolkit.h"
-#import "DBMenuSwitchTableViewCell.h"
-#import "DBTextViewTableViewCell.h"
+#import "../../../Categories/NSBundle+DBDebugToolkit.h"
+#import "../../../Cells/DBMenuSwitchTableViewCell.h"
+#import "../../../Cells/DBTextViewTableViewCell.h"
 
 static NSString *const DBCoreDataFilterTableViewControllerOptionCellIdentifier = @"DBOptionTableViewCell";
 static NSString *const DBCoreDataFilterTableViewControllerSwitchCellIdentifier = @"DBMenuSwitchTableViewCell";

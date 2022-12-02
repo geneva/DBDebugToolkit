@@ -21,8 +21,8 @@
 // THE SOFTWARE.
 
 #import "UIView+DBUserInterfaceToolkit.h"
-#import "NSObject+DBDebugToolkit.h"
-#import "DBUserInterfaceToolkit.h"
+#import "../../Categories/NSObject+DBDebugToolkit.h"
+#import "../DBUserInterfaceToolkit.h"
 #import "UIColor+DBUserInterfaceToolkit.h"
 #import <objc/runtime.h>
 

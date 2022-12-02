@@ -1,1 +1,0 @@
-../Classes/Triggers/ShakeTrigger/UIWindow+DBShakeTrigger.h

@@ -24,6 +24,9 @@
 #import "DBDebugToolkitTrigger.h"
 #import "DBCustomAction.h"
 #import "DBCustomVariable.h"
+#import "DBNetworkToolkit.h"
+#import "DBRequestOutcome.h"
+#import "DBURLProtocol.h"
 
 /**
  `DBDebugToolkit` provides the interface that can be used to setup and customize the debugging tools.

@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "DBDebugToolkit.h"
+#import "../Headers/DBDebugToolkit.h"
 #import "Triggers/ShakeTrigger/DBShakeTrigger.h"
 #import "Menu/DBMenuTableViewController.h"
 #import "Categories/NSBundle+DBDebugToolkit.h"
@@ -28,7 +28,7 @@
 #import "Performance/DBPerformanceToolkit.h"
 #import "Performance/DBPerformanceTableViewController.h"
 #import "Console/DBConsoleOutputCaptor.h"
-#import "Network/DBNetworkToolkit.h"
+#import "../Headers/DBNetworkToolkit.h"
 #import "UserInterface/DBUserInterfaceToolkit.h"
 #import "Location/DBLocationToolkit.h"
 #import "Resources/Keychain/DBKeychainToolkit.h"

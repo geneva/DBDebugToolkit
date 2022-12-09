@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "RequestModel/DBRequestOutcome.h"
+#import "DBRequestOutcome.h"
 
 @class DBNetworkToolkit;
 

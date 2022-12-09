@@ -20,8 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "DBNetworkToolkit.h"
-#import "URLProtocol/DBURLProtocol.h"
+#import "../../Headers/DBNetworkToolkit.h"
+#import "../../Headers/DBURLProtocol.h"
 #import "RequestModel/DBRequestModel.h"
 
 Class DBNetworkURLProtocolClass;

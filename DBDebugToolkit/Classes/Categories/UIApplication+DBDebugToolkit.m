@@ -22,7 +22,7 @@
 
 #import "UIApplication+DBDebugToolkit.h"
 #import "NSObject+DBDebugToolkit.h"
-#import "DBDebugToolkit.h"
+#import "../../Headers/DBDebugToolkit.h"
 #import <objc/runtime.h>
 
 NSString *const DBClearDataShortcutItemType = @"DBClearDataShortcutItemType";

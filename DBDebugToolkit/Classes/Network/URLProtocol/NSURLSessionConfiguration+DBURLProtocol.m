@@ -21,9 +21,9 @@
 // THE SOFTWARE.
 
 #import "NSURLSessionConfiguration+DBURLProtocol.h"
-#import "DBURLProtocol.h"
+#import "../../../Headers/DBURLProtocol.h"
 #import "../../Categories/NSObject+DBDebugToolkit.h"
-#import "../DBNetworkToolkit.h"
+#import "../../../Headers/DBNetworkToolkit.h"
 
 @implementation NSURLSessionConfiguration (DBURLProtocol)
 

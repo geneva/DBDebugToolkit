@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "DBRequestDataHandler.h"
-#import "../DBNetworkToolkit.h"
+#import "../../../Headers/DBNetworkToolkit.h"
 
 static CGSize const DBRequestDataHandlerThumbnailSize = { 50, 50 };
 

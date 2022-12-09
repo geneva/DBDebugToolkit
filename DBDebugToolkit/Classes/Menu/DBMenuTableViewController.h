@@ -25,7 +25,7 @@
 #import "../Console/DBConsoleOutputCaptor.h"
 #import "../BuildInfo/DBBuildInfoProvider.h"
 #import "../Device/DBDeviceInfoProvider.h"
-#import "../Network/DBNetworkToolkit.h"
+#import "../../Headers/DBNetworkToolkit.h"
 #import "../UserInterface/DBUserInterfaceToolkit.h"
 #import "../Location/DBLocationToolkit.h"
 #import "../Resources/CoreData/DBCoreDataToolkit.h"

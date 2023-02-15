@@ -53,7 +53,8 @@ static NSString *const CLLocationManagerLocationsKey = @"Locations";
 
 - (void)db_onClientEventLocation:(NSDictionary *)dictionary forceMapMatching:(BOOL)forceMapMatching type:(id)type {
     if ([DBLocationToolkit sharedInstance].simulatedLocation == nil) {
-        [self db_onClientEventLocation:dictionary forceMapMatching:forceMapMatching type:type];
+        // NOTE: seems to be crashing the app
+        // [self db_onClientEventLocation:dictionary forceMapMatching:forceMapMatching type:type];
     } else {
         [self.delegate locationManager:self didUpdateLocations:@[[DBLocationToolkit sharedInstance].simulatedLocation]];
     }
